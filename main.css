@@ -224,7 +224,8 @@ line-height: 28.214px; /* 141.07% */
     
  }
  .search-pickup .search-input{
-    width: 135px;
+    max-width: 135px;
+    width: 100%;
  }
  .search-btn{
 border-radius: 8px;
@@ -294,6 +295,12 @@ background: #F8F8F8;
         border-radius: 4px;
 border: none;
 background: #006BE4;;
+    }
+ }
+ /*---------------responsive-------------------*/
+ @media (max-width:1200px){
+    .search-bar-container{
+        flex-wrap: wrap;
     }
  }
  /*-------------------------------filter section-----------------------*/
@@ -490,7 +497,7 @@ letter-spacing: -0.24px;
 .filter-car-cards{
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 16px;
 }
 .car-img{
@@ -560,6 +567,7 @@ gap: 16px;
     display: flex;
     align-items: flex-start;
     padding-bottom: 16px;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
    
@@ -569,6 +577,7 @@ gap: 16px;
 .show-results-card-top-left{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     gap: 16px;
 }
@@ -576,6 +585,7 @@ gap: 16px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    flex-wrap: wrap;
     gap: 8px;
     width: 100%;
 }
@@ -608,6 +618,7 @@ line-height: 20.153px; /* 167.94% */
     display: flex;
     align-items: center;
     gap: 8px;
+    flex-wrap: wrap;
 }
 .rating-stars{
     display: flex;
@@ -625,6 +636,7 @@ line-height: 17.5px; /* 125% */
 .show-results-card-top-left-content-specifications{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 16px;
     width: 100%;
    
@@ -718,6 +730,7 @@ background: #006BE4;
 .show-results-card-bottom{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     width: 100%;
 }
