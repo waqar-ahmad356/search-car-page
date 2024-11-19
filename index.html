@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="TROPICDRIVE" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="main.css" />
+    <title>TROPICDRIVE</title>
+</head>
+
+<body>
+    <!-----------------------navbar start--------------------->
+    <header class="navbar-section">
+        <div class="navbar-drive container">
+            <div class="nav-drive-logo">
+                <img src="./assets/logo.png" width="230" height="30" class="img-fluid" alt="logo" />
+            </div>
+            <ul class="nav-menus">
+                <li><a href="#home"><img src="./assets/home.png" alt="home-icon"><span>Go to the main site</span></a>
+                </li>
+                <li><a href="#home"><img src="./assets/language.png" alt="language"><span>English</span></a></li>
+                <li><a href="#home"><img src="./assets/login.png" alt="login-icon"><span>Logout</span></a></li>
+            </ul>
+            <ul class="nav-menus-mobile">
+                <li class="nav-path"><a href="#"><img src="./assets/path.png" alt="path" /></a></li>
+                <li class="nav-menu-user"><a href="#"><img src="./assets/menu-icon.png" alt="menu" /> <img
+                            src="./assets/user.png" alt="user" /></a></li>
+            </ul>
+        </div>
+    </header>
+    <!-----------------------navbar end--------------------->
+
+    <!-------------------saerch-bar section start--------------------->
+    <section class="search-bar-section">
+        <div class="container">
+            <div class="search-bar-container ">
+                <div class="pickup-location">
+                    <p>Pick-up location</p>
+                    <div class="search-input">
+                        <img src="./assets/search.png" alt="search-icon" />
+                        <input type="text" placeholder="Enter Your Location" />
+                    </div>
+                </div>
+                <div class="pickup">
+                    <p>Pick-up</p>
+                    <div class="search-pickup">
+                        <div class="search-input">
+                            <img src="./assets/date.png" alt="date-icon" />
+                            <input type="text" placeholder="Choose Date" />
+                        </div>
+                        <div class="search-input">
+                            <img src="./assets/time.png" alt="time-icon" />
+                            <input type="text" placeholder="Choose Time" />
+                        </div>
+                    </div>
+                </div>
+                <div class="pickup">
+                    <p>Pick-up</p>
+                    <div class="search-pickup">
+                        <div class="search-input">
+                            <img src="./assets/date.png" alt="date-icon" />
+                            <input type="text" placeholder="Choose Date" />
+                        </div>
+                        <div class="search-input">
+                            <img src="./assets/time.png" alt="time-icon" />
+                            <input type="text" placeholder="Choose Time" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pickup">
+                    <p class="mb-4"></p>
+                    <button class="search-btn" type="button">Search</button>
+                </div>
+
+            </div>
+
+            <div class="searc-container-mobile">
+                <div class="filter-icon">
+                    <img src="./assets/filter-lines.png" alt="filter-icon" />
+                </div>
+                <div class="search-mobile">
+                    <img src="./assets/search.png" alt="search-icon" />
+                    <span>Canda</span>
+
+                </div>
+                <div class="date-icon">
+                    <img src="./assets/date.png" alt="date-icon" />
+                </div>
+                <button class="search-btn-mobile">
+                    <img src="./assets/search-icon.png" alt="search" />
+                </button>
+            </div>
+        </div>
+
+    </section>
+    <!-------------------saerch-bar section end--------------------->
+    <!-----------------------filter  section start---------------->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter">
+                <div class="filter-sidebar">
+                    <div class="filter-map-img">
+                        <img src="./assets/map.png" alt="map" width="325" height="240" />
+
+                    </div>
+                    <div class="filteration">
+                        <div class="filter-head">
+                            <h4>Filter</h4>
+                            <span>Clear</span>
+                        </div>
+                        <!-----------filter location-->
+                        <div class="filter-location">
+                            <h3>Location</h3>
+                            <div class="location-check">
+                                <div class="check-box-content">
+                                    <input type="checkbox" />
+                                    <p>Airport<span>(in terminal)</span></p>
+                                </div>
+                                <p class="count">0</p>
+                            </div>
+                            <div class="location-check">
+                                <div class="check-box-content">
+                                    <input type="checkbox" />
+                                    <p>Airport<span>(in terminal)</span></p>
+                                </div>
+                                <p class="count">0</p>
+                            </div>
+                            <div class="location-check">
+                                <div class="check-box-content">
+                                    <input type="checkbox" />
+                                    <p>All other locations</p>
+                                </div>
+                                <p class="count">4</p>
+                            </div>
+                        </div>
+                        <!------------price per day-->
+                        <div class="filter-price">
+                            <h3>Price Per Day</h3>
+                            <div class="price-check">
+                                <div class="check-box-content">
+                                    <input type="checkbox" />
+                                    <p>US $0-$50</p>
+                                </div>
+                                <p class="count">4</p>
+                            </div>
+                            <div class="price-check">
+                                <div class="check-box-content">
+                                    <input type="checkbox" />
+                                    <p>US $50-$100</p>
+                                </div>
+                                <p class="count">32</p>
+                            </div>
+                            <div class="price-check">
+                                <div class="check-box-content">
+                                    <input type="checkbox" />
+                                    <p>US $50-$100</p>
+                                </div>
+                                <p class="count">19</p>
+                            </div>
+                            <div class="price-check">
+                                <div class="check-box-content">
+                                    <input type="checkbox" />
+                                    <p>US $50-$100</p>
+                                </div>
+                                <p class="count">6</p>
+                            </div>
+                            <div class="price-check">
+                                <div class="check-box-content">
+                                    <input type="checkbox" />
+                                    <p>US $50-$100</p>
+                                </div>
+                                <p class="count">10</p>
+                            </div>
+                        </div>
+                        <!-------------------Transmission---------->
+                        <div class="filter-price">
+                            <h3>Transmission</h3>
+                            <div class="price-check">
+                                <div class="check-box-content">
+                                    <input type="checkbox" />
+                                    <p>Automatic</p>
+                                </div>
+                                <p class="count">4</p>
+                            </div>
+                            <div class="price-check">
+                                <div class="check-box-content">
+                                    <input type="checkbox" />
+                                    <p>Manual</p>
+                                </div>
+                                <p class="count">8</p>
+                            </div>
+
+                        </div>
+                        <!-----------------seats-------------->
+                        <div class="filter-seats">
+                            <h3>Seats</h3>
+
+                            <div class="seat-box-content">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <input type="checkbox" />
+                                    <p>2</p>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <input type="checkbox" />
+                                    <p>4</p>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <input type="checkbox" />
+                                    <p>5</p>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <input type="checkbox" />
+                                    <p>7</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-------------------Company------------------>
+                        <div class="company-filter">
+                            <h3>Company</h3>
+                            <div class="company-logos">
+                                <img src="./assets/okmobility.png" alt="company-logo"/>
+                                <img src="./assets/avis.png" alt="company-logo"/>
+                                <img src="./assets/boom.png" alt="company-logo"/>
+                                <img src="./assets/record.png" alt="company-logo"/>
+                                <img src="./assets/okmobility.png" alt="company-logo"/>
+                                <img src="./assets/avis.png" alt="company-logo"/>
+                                <img src="./assets/boom.png" alt="company-logo"/>
+                                <img src="./assets/record.png" alt="company-logo"/>
+                            </div>
+                        </div>
+                        <!-------------Rating filter---------------->
+                        <div class="filter-seats">
+                            <h3>Rating</h3>
+
+                            <div class="seat-box-content">
+                                <div class="d-flex gap-2 align-items-center">
+                                    <input type="checkbox" />
+                                    <p>2+</p>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <input type="checkbox" />
+                                    <p>4+</p>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center">
+                                    <input type="checkbox" />
+                                    <p>5+</p>
+                                </div>
+                               
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-content">
+                    <div class="filtered-cars">
+                        <div class="filter-cars-head">
+                            <h2>Available Cars: </h2>
+                            <span>24 cars</span>
+                        </div>
+                        <div class="filter-car-cards">
+                            <div class="filter-car-card">
+                                <div class="car-img">
+                                    <img src="./assets/premium-car.png" alt="premium-car" />
+                                </div>
+                                <h3>Premium Car</h3>
+                            </div>
+                            <div class="filter-car-card">
+                                <div class="car-img">
+                                    <img src="./assets/large-car.png" alt="large-car" />
+                                </div>
+                                <h3>Large Car</h3>
+                            </div>
+                            <div class="filter-car-card">
+                                <div class="car-img">
+                                    <img src="./assets/medium-car.png" alt="medium-car" />
+                                </div>
+                                <h3>Medium Car</h3>
+                            </div>
+                            <div class="filter-car-card">
+                                <div class="car-img">
+                                    <img src="./assets/small-car.png" alt="small-car" />
+                                </div>
+                                <h3>Small Car</h3>
+                            </div>
+                            <div class="filter-car-card">
+                                <div class="car-img">
+                                    <img src="./assets/suv-car.png" alt="suv-car" />
+                                </div>
+                                <h3>SUV Car</h3>
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="show-results">
+                        <h4>Showing Results</h4>
+                        <div class="show-results-cards">
+                            <div class="show-results-card">
+                                <div class="show-results-card-top">
+                                    <div class="show-results-card-top-left">
+                                        <div class="show-results-card-top-left-img">
+                                            <img src="./assets/kia rio.png" alt="img-car"/>
+                                        </div>
+                                        <div class="show-results-card-top-left-content">
+                                            <div class="show-results-card-top-left-content-head">
+                                                <h3>Kia Rio</h3>
+                                                <span class="badge">Medium Car</span>
+                                            </div>
+                                            <div class="show-results-card-top-left-content-rating">
+                                                <div class="brand-logo">
+                                                    <img src="./assets/boom.png" alt="boom-logo"/>
+                                                </div>
+                                                <div class="rating-stars">
+                                                    <p>Rating:</p>
+                                                    <img src="./assets/stars.png" alt="stars"/>
+                                                    <img src="./assets/stars.png" alt="stars"/>
+                                                    <img src="./assets/stars.png" alt="stars"/>
+                                                    <img src="./assets/stars.png" alt="stars"/>
+                                                    <img src="./assets/stars.png" alt="stars"/>
+                                                </div>
+                                            </div>
+                                            <div class="show-results-card-top-left-content-specifications">
+                                                <div class="specifications">
+                                                    <div class="specification-img">
+                                                        <img src="./assets/seats.png" alt="seats"/>
+                                                    </div>
+                                                    <p>4 Seats</p>
+                                                </div>
+                                                <div class="specifications">
+                                                    <div class="specification-img">
+                                                        <img src="./assets/automatic.png" alt="automatic"/>
+                                                    </div>
+                                                    <p>Automatic</p>
+                                                </div>
+                                                <div class="specifications">
+                                                    <div class="specification-img">
+                                                        <img src="./assets/large-bag.png" alt="large-bag"/>
+                                                    </div>
+                                                    <p>large bag</p>
+                                                </div>
+                                                <div class="specifications">
+                                                    <div class="specification-img">
+                                                        <img src="./assets/small-bag.png" alt="small-bag"/>
+                                                    </div>
+                                                    <p>Small bag</p>
+                                                </div>
+                                                <div class="specifications">
+                                                    <div class="specification-img">
+                                                        <img src="./assets/mileage.png" alt="mileage"/>
+                                                    </div>
+                                                    <p>Mileage</p>
+                                                </div>
+                                            </div>
+                                            <p class="card-description"> Or similair text because exact cars are never guaranteed</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="show-results-card-top-right">
+                                        <div class="show-results-card-top-right-head">
+                                            <p>Free cancellation</p>
+                                            <div class="show-results-card-top-right-head-price">
+                                                <span class="price">US $220</span>
+                                                <span class="days">Price for 3 days</span>
+                                            </div>
+                                        </div>
+                                        <button class="show-results-card-top-right-btn">View Deal</button>
+                                    </div>
+
+                                </div>
+                                <div class="show-results-card-bottom">
+                                    <div class="show-results-card-bottom-content">
+                                        <p>In Terminal:</p>
+                                        <span>Las Americas International Airport</span>
+                                    </div>
+                                    <div class="important-info">
+                                        <img src="./assets/info.png" alt="important-info"/>
+                                        <p>Important info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--------card 2-->
+                            <div class="show-results-card">
+                                <div class="show-results-card-top">
+                                    <div class="show-results-card-top-left">
+                                        <div class="show-results-card-top-left-img">
+                                            <img src="./assets/kia rio.png" class="img-fluid" alt="img-car"/>
+                                        </div>
+                                        <div class="show-results-card-top-left-content">
+                                            <div class="show-results-card-top-left-content-head">
+                                                <h3>Kia Rio</h3>
+                                                <span class="badge">Medium Car</span>
+                                            </div>
+                                            <div class="show-results-card-top-left-content-rating">
+                                                <div class="brand-logo">
+                                                    <img src="./assets/boom.png" alt="boom-logo"/>
+                                                </div>
+                                                <div class="rating-stars">
+                                                    <p>Rating:</p>
+                                                    <img src="./assets/stars.png" alt="stars"/>
+                                                    <img src="./assets/stars.png" alt="stars"/>
+                                                    <img src="./assets/stars.png" alt="stars"/>
+                                                    <img src="./assets/stars.png" alt="stars"/>
+                                                    <img src="./assets/stars.png" alt="stars"/>
+                                                </div>
+                                            </div>
+                                            <div class="show-results-card-top-left-content-specifications">
+                                                <div class="specifications">
+                                                    <div class="specification-img">
+                                                        <img src="./assets/seats.png" alt="seats"/>
+                                                    </div>
+                                                    <p>4 Seats</p>
+                                                </div>
+                                                <div class="specifications">
+                                                    <div class="specification-img">
+                                                        <img src="./assets/automatic.png" alt="automatic"/>
+                                                    </div>
+                                                    <p>Automatic</p>
+                                                </div>
+                                                <div class="specifications">
+                                                    <div class="specification-img">
+                                                        <img src="./assets/large-bag.png" alt="large-bag"/>
+                                                    </div>
+                                                    <p>large bag</p>
+                                                </div>
+                                                <div class="specifications">
+                                                    <div class="specification-img">
+                                                        <img src="./assets/small-bag.png" alt="small-bag"/>
+                                                    </div>
+                                                    <p>Small bag</p>
+                                                </div>
+                                                <div class="specifications">
+                                                    <div class="specification-img">
+                                                        <img src="./assets/mileage.png" alt="mileage"/>
+                                                    </div>
+                                                    <p>Mileage</p>
+                                                </div>
+                                            </div>
+                                            <p class="card-description"> Or similair text because exact cars are never guaranteed</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="show-results-card-top-right">
+                                        <div class="show-results-card-top-right-head">
+                                            <p>Free cancellation</p>
+                                            <div class="show-results-card-top-right-head-price">
+                                                <span class="price">US $220</span>
+                                                <span class="days">Price for 3 days</span>
+                                            </div>
+                                        </div>
+                                        <button class="show-results-card-top-right-btn">View Deal</button>
+                                    </div>
+
+                                </div>
+                                <div class="show-results-card-bottom">
+                                    <div class="show-results-card-bottom-content">
+                                        <p>In Terminal:</p>
+                                        <span>Las Americas International Airport</span>
+                                    </div>
+                                    <div class="important-info">
+                                        <img src="./assets/info.png" alt="important-info"/>
+                                        <p>Important info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!------------card 3------->
+                            <div class="show-results-card">
+                                <div class="show-results-card-top">
+                                    <div class="show-results-card-top-left">
+                                        <div class="show-results-card-top-left-img">
+                                            <img src="./assets/kia rio.png" alt="img-car"/>
+                                        </div>
+                                        <div class="show-results-card-top-left-content">
+                                            <div class="show-results-card-top-left-content-head">
+                                                <h3>Kia Rio</h3>
+                                                <span class="badge">Medium Car</span>
+                                            </div>
+                                            <div class="show-results-card-top-left-content-rating">
+                                                <div class="brand-logo">
+                                                    <img src="./assets/boom.png" alt="boom-logo"/>
+                                                </div>
+                                                <div class="rating-stars">
+                                                    <p>Rating:</p>
+                                                    <img src="./assets/stars.png" alt="stars"/>
+                                                    <img src="./assets/stars.png" alt="stars"/>
+                                                    <img src="./assets/stars.png" alt="stars"/>
+                                                    <img src="./assets/stars.png" alt="stars"/>
+                                                    <img src="./assets/stars.png" alt="stars"/>
+                                                </div>
+                                            </div>
+                                            <div class="show-results-card-top-left-content-specifications">
+                                                <div class="specifications">
+                                                    <div class="specification-img">
+                                                        <img src="./assets/seats.png" alt="seats"/>
+                                                    </div>
+                                                    <p>4 Seats</p>
+                                                </div>
+                                                <div class="specifications">
+                                                    <div class="specification-img">
+                                                        <img src="./assets/automatic.png" alt="automatic"/>
+                                                    </div>
+                                                    <p>Automatic</p>
+                                                </div>
+                                                <div class="specifications">
+                                                    <div class="specification-img">
+                                                        <img src="./assets/large-bag.png" alt="large-bag"/>
+                                                    </div>
+                                                    <p>large bag</p>
+                                                </div>
+                                                <div class="specifications">
+                                                    <div class="specification-img">
+                                                        <img src="./assets/small-bag.png" alt="small-bag"/>
+                                                    </div>
+                                                    <p>Small bag</p>
+                                                </div>
+                                                <div class="specifications">
+                                                    <div class="specification-img">
+                                                        <img src="./assets/mileage.png" alt="mileage"/>
+                                                    </div>
+                                                    <p>Mileage</p>
+                                                </div>
+                                            </div>
+                                            <p class="card-description"> Or similair text because exact cars are never guaranteed</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="show-results-card-top-right">
+                                        <div class="show-results-card-top-right-head">
+                                            <p>Free cancellation</p>
+                                            <div class="show-results-card-top-right-head-price">
+                                                <span class="price">US $220</span>
+                                                <span class="days">Price for 3 days</span>
+                                            </div>
+                                        </div>
+                                        <button class="show-results-card-top-right-btn">View Deal</button>
+                                    </div>
+
+                                </div>
+                                <div class="show-results-card-bottom">
+                                    <div class="show-results-card-bottom-content">
+                                        <p>In Terminal:</p>
+                                        <span>Las Americas International Airport</span>
+                                    </div>
+                                    <div class="important-info">
+                                        <img src="./assets/info.png" alt="important-info"/>
+                                        <p>Important info</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------filter  section end---------------->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
