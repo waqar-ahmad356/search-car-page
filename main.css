@@ -185,6 +185,7 @@ line-height: 28.214px; /* 141.07% */
  .search-input input{
     border: none;
     background: transparent;
+    width: 100%;
  }
  .search-input input:focus{
     outline: none;
@@ -225,7 +226,7 @@ line-height: 28.214px; /* 141.07% */
     
  }
  .search-pickup .search-input{
-    max-width: 135px;
+    max-width: 145px;
     width: 100%;
  }
  .search-btn{
@@ -490,6 +491,7 @@ line-height: normal;
 .filtered-cars{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     gap: 24px;
 }
 .carousel{
@@ -523,6 +525,7 @@ letter-spacing: -0.24px;
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
+    overflow-x: auto;
     gap: 16px;
 }
 .car-img{
@@ -820,7 +823,7 @@ line-height: 20px; /* 142.857% */
         gap: 8px;
     }
     .filter-car-cards{
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
     
 }
