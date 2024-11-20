@@ -171,6 +171,7 @@ width: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
     
  } 
  .pickup-location p{
@@ -206,7 +207,7 @@ max-width: 467px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 100%;
+    
  } 
  .pickup p{
     color: #000;
@@ -243,6 +244,7 @@ line-height: 28.214px; /* 201.528% */
  .searc-container-mobile{
     display: none;
  }
+ 
  /*---------------------responsive-----------------------*/
 
  @media(max-width:521px){
@@ -320,11 +322,30 @@ justify-content: flex-start;
     flex-direction: column;
     gap: 16px;
  }
+ .filter-map-img{
+    position: relative;
+ }
  .filter-map-img img{
    
     max-width: 100%;
     height: auto;
     
+ }
+ .filter-map-img button{
+    position: absolute;
+    bottom: 16px;
+    left:30%;
+    border-radius: 4px;
+background: #006BE4;
+padding: 9px 15px;
+border: none;
+color: var(--Color-Token-Main-Colors-White, #FFF);
+
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+  
  }
  .filteration{
     max-width: 325px;
@@ -463,6 +484,7 @@ line-height: normal;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
     gap: 24px;
  }
 .filtered-cars{
@@ -470,6 +492,9 @@ line-height: normal;
     flex-direction: column;
     gap: 24px;
 }
+.carousel{
+    display: none;
+ }
 .filter-cars-head{
     display: flex;
     align-items: center;
@@ -497,7 +522,7 @@ letter-spacing: -0.24px;
 .filter-car-cards{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 16px;
 }
 .car-img{
@@ -533,6 +558,7 @@ line-height: normal;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
     gap: 24px;
 }
 .show-results h4{
@@ -625,6 +651,18 @@ line-height: 20.153px; /* 167.94% */
     gap: 8px;
     align-items: center;
 }
+.rating-container {
+    display: flex;
+    gap: 6px;
+  }
+  
+  .star {
+    font-size: 26px;
+    color: #FFC107; /* Default color for stars */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
 .rating-stars p{
     color: var(--Foundation-Grey-Darker, #494949);
 
@@ -717,10 +755,10 @@ line-height: 17.5px; /* 125% */
 }
 .show-results-card-top-right-btn{
  text-align: center;
-padding: 12px 20px;
+padding: 12px 41px;
 color: var(--White, #FEFEFE);
 border: none;
-font-size: 16px;
+font-size: 14px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
@@ -768,220 +806,83 @@ font-style: normal;
 font-weight: 400;
 line-height: 20px; /* 142.857% */
 }
+.kia-rio-mobile{
+    display: none;
+}
+.swiper-container {
+    display: none;
+}
 
 /*------------------------responsive---------------------------*/
-@media (max-width:1439px){
-    .show-results-card-top{
-        display: flex;
-        align-items: flex-start;
-        padding-bottom: 16px;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-       
-        border-bottom: 1px solid #DEE4E7;
-        
-    }
-    .show-results-card-top-left{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        gap: 16px;
-    }
-    .show-results-card-top-left-content{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        gap: 8px;
-        width: 100%;
-    }
-    .show-results-card-top-left-content-head{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-    .show-results-card-top-left-content-head h3{
-        color: var(--New-Color-2, #2C373D);
-    
-    font-size: 24.183px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 30px; /* 124.052% */
-    }
-    .badge{
-        border-radius: 4.031px;
-    background: #14AE5C;
-    padding: 2.015px 8px;
-    border-radius: 4.031px;
-    color: #FFF;
-    
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20.153px; /* 167.94% */
-    }
-    .show-results-card-top-left-content-rating{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        flex-wrap: wrap;
-    }
-    .rating-stars{
-        display: flex;
-        gap: 8px;
-        align-items: center;
-    }
-    .rating-stars p{
-        color: var(--Foundation-Grey-Darker, #494949);
-    
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 17.5px; /* 125% */
-    }
+@media (max-width:1400px){
     .show-results-card-top-left-content-specifications{
-        display: flex;
-        align-items: center;
         flex-wrap: wrap;
-        gap: 16px;
-        width: 100%;
-       
-    }
-    .specifications{
-        display: flex;
-        align-items: center;
         gap: 8px;
     }
-    .specifications p{
-        color: var(--New-Color-2, #2C373D);
-    text-wrap: nowrap;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28.214px; /* 201.528% */
-    }
-    .card-description{
-        color: var(--foundation-grey-dark-active, #5E5E5E);
-    padding-top: 4px;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    }
-    .specification-img{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        width: 30.229px;
-    height: 30.229px;
-    background-color: #F7F7F7;
-    }
-    .show-results-card-top-right{
-        display: flex;
-    max-width: 154px;
-    width: 100%;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 16px;
-    }
-    .show-results-card-top-right-head{
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
-        gap: 8px;
-    }
-    .show-results-card-top-right-head p{
-        color: var(--foundation-grey-dark-active, #5E5E5E);
-    text-align: right;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 17.5px; /* 125% */
-    }
-    .show-results-card-top-right-head-price{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 4px;
-    }
-    .show-results-card-top-right-head-price .price{
-        color: var(--primary-color, #090B1E);
-    font-family: 'Poppins';
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 32.245px; /* 115.159% */
-    }
-    .show-results-card-top-right-head-price .days{
-        color: #7A7A7A;
-    
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 17.5px; /* 125% */
-    }
-    .show-results-card-top-right-btn{
-     text-align: center;
-    padding: 12px 20px;
-    color: var(--White, #FEFEFE);
-    border: none;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    border-radius: 4px;
-    background: #006BE4;
-    }
-    .show-results-card-bottom{
-        display: flex;
-        justify-content: space-between;
+    .filter-car-cards{
         flex-wrap: wrap;
-        align-items: center;
-        width: 100%;
     }
-    .show-results-card-bottom-content{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-    .show-results-card-bottom-content p{
-        color: var(--Foundation-Grey-Darker, #494949);
     
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 17.5px; /* 125% */
+}
+@media (max-width:991px){
+    .show-results-card-top{
+        flex-direction: column;
     }
-    .show-results-card-bottom-content span{
-        color: var(--primary-color, #090B1E);
     
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 17.5px; /* 125% */
+}
+@media (max-width:768px){
+    .show-results-card-top-left{
+        flex-direction: column;
     }
-    .important-info{
-        display: flex;
-        align-items: center;
-        gap: 8px;
+    .kia-rio-desktop{
+        display: none;
     }
-    .important-info p{
-        color: #006BE4;
-    
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 142.857% */
-    }
+    .kia-rio-mobile{
+        display: block;
 
+    }
 }
 @media (max-width: 521px) {
     .filter-sidebar{
         display: none;
     }
+    .filter-car-card{
+        display: none;
+    }
+    .filter-car-cards{
+        flex-direction: row;
+    }
+    
+    .swiper-container {
+        width: 100%; 
+        overflow: hidden; 
+        display: none;
+        justify-content: center;
+       
+        align-items: center;
+        padding: 0 0 !important;
+      }
+      
+      .swiper-wrapper {
+        gap: 10px;
+        display: flex;
+        animation: scroll 20s linear infinite;
+        
+      }
+      
+      
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        } /* Adjust based on the number of images */
+      }
+     
+     
+   
+    
     .filter-car-cards{
         flex-wrap: wrap;
     }
