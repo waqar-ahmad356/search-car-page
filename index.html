@@ -20,7 +20,7 @@
     <header class="navbar-section">
         <div class="navbar-drive container">
             <div class="nav-drive-logo">
-                <img src="./assets/logo.png" width="230" height="30" class="img-fluid" alt="logo" />
+                <a href="/" > <img src="./assets/logo.png" width="230" height="30" class="img-fluid" alt="logo" /></a>
             </div>
             <ul class="nav-menus">
                 <li><a href="#home"><img src="./assets/home.png" alt="home-icon"><span>Go to the main site</span></a>
@@ -28,9 +28,20 @@
                 <li><a href="#home"><img src="./assets/language.png" alt="language"><span>English</span></a></li>
                 <li><a href="#home"><img src="./assets/login.png" alt="login-icon"><span>Logout</span></a></li>
             </ul>
+            <div class="offcanvas offcanvas-end" id="demo">
+                <div class="offcanvas-header">
+                  <a href="/" class="offcanvas-title"><img src="./assets/logo.png" class="img-fluid" alt="logo"/></a>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body ">
+                    <a href="#home" class="d-flex align-items-center gap-2 text-black"><img src="./assets/home.png" alt="home-icon"><span>Go to the main site</span></a>
+                    
+                 
+                </div>
+              </div>
             <ul class="nav-menus-mobile">
                 <li class="nav-path"><a href="#"><img src="./assets/path.png" alt="path" /></a></li>
-                <li class="nav-menu-user"><a href="#"><img src="./assets/menu-icon.png" alt="menu" /> <img
+                <li class="nav-menu-user" ><a href="#" data-bs-toggle="offcanvas" data-bs-target="#demo" ><img src="./assets/menu-icon.png" alt="menu" /> <img
                             src="./assets/user.png" alt="user" /></a></li>
             </ul>
         </div>
@@ -62,7 +73,7 @@
                     </div>
                 </div>
                 <div class="pickup">
-                    <p>Pick-up</p>
+                    <p>Pick-off</p>
                     <div class="search-pickup">
                         <div class="search-input">
                             
@@ -83,12 +94,12 @@
             </div>
 
             <div class="searc-container-mobile">
-                <div class="filter-icon">
+                <div class="filter-icon" data-bs-toggle="offcanvas" data-bs-target="#demo2">
                     <img src="./assets/filter-lines.png" alt="filter-icon" />
                 </div>
                 <div class="search-mobile">
                     <img src="./assets/search.png" alt="search-icon" />
-                    <span>Canda</span>
+                    
 
                 </div>
                 <div class="date-icon">
@@ -114,30 +125,30 @@
                     <div class="filteration">
                         <div class="filter-head">
                             <h4>Filter</h4>
-                            <span>Clear</span>
+                            <button id="clear-button">Clear</button>
                         </div>
                         <!-----------filter location-->
-                        <div class="filter-location">
+                        <div class="filter-location w-100" >
                             <h3>Location</h3>
-                            <div class="location-check">
-                                <div class="check-box-content">
-                                    <input type="checkbox" />
+                            <div class="location-check w-100">
+                                <label class="check-box-content">
+                                    <input type="checkbox" class="checkbox" />
                                     <p>Airport<span>(in terminal)</span></p>
-                                </div>
+                                </label>
                                 <p class="count">0</p>
                             </div>
-                            <div class="location-check">
-                                <div class="check-box-content">
-                                    <input type="checkbox" />
+                            <div class="location-check w-100">
+                                <label class="check-box-content">
+                                    <input type="checkbox" class="checkbox"  />
                                     <p>Airport<span>(in terminal)</span></p>
-                                </div>
+                                </label>
                                 <p class="count">0</p>
                             </div>
-                            <div class="location-check">
-                                <div class="check-box-content">
-                                    <input type="checkbox" />
+                            <div class="location-check w-100">
+                                <label class="check-box-content">
+                                    <input type="checkbox" class="checkbox"  />
                                     <p>All other locations</p>
-                                </div>
+                                </label>
                                 <p class="count">4</p>
                             </div>
                         </div>
@@ -145,38 +156,38 @@
                         <div class="filter-price">
                             <h3>Price Per Day</h3>
                             <div class="price-check">
-                                <div class="check-box-content">
-                                    <input type="checkbox" />
+                                <label class="check-box-content">
+                                    <input type="checkbox" class="checkbox"  />
                                     <p>US $0-$50</p>
-                                </div>
+                                </label>
                                 <p class="count">4</p>
                             </div>
                             <div class="price-check">
-                                <div class="check-box-content">
-                                    <input type="checkbox" />
+                                <label class="check-box-content">
+                                    <input type="checkbox" class="checkbox" />
                                     <p>US $50-$100</p>
-                                </div>
+                                </label>
                                 <p class="count">32</p>
                             </div>
                             <div class="price-check">
-                                <div class="check-box-content">
-                                    <input type="checkbox" />
+                                <label class="check-box-content">
+                                    <input type="checkbox" class="checkbox"  />
                                     <p>US $50-$100</p>
-                                </div>
+                                </label>
                                 <p class="count">19</p>
                             </div>
                             <div class="price-check">
-                                <div class="check-box-content">
-                                    <input type="checkbox" />
+                                <label class="check-box-content">
+                                    <input type="checkbox" class="checkbox"  />
                                     <p>US $50-$100</p>
-                                </div>
+                                </label>
                                 <p class="count">6</p>
                             </div>
                             <div class="price-check">
-                                <div class="check-box-content">
-                                    <input type="checkbox" />
+                                <label class="check-box-content">
+                                    <input type="checkbox" class="checkbox"  />
                                     <p>US $50-$100</p>
-                                </div>
+                                </label>
                                 <p class="count">10</p>
                             </div>
                         </div>
@@ -184,17 +195,17 @@
                         <div class="filter-price">
                             <h3>Transmission</h3>
                             <div class="price-check">
-                                <div class="check-box-content">
-                                    <input type="checkbox" />
+                                <label class="check-box-content">
+                                    <input type="checkbox" class="checkbox"  />
                                     <p>Automatic</p>
-                                </div>
+                                </label>
                                 <p class="count">4</p>
                             </div>
                             <div class="price-check">
-                                <div class="check-box-content">
-                                    <input type="checkbox" />
+                                <label class="check-box-content">
+                                    <input type="checkbox" class="checkbox"  />
                                     <p>Manual</p>
-                                </div>
+                                </label>
                                 <p class="count">8</p>
                             </div>
 
@@ -204,22 +215,22 @@
                             <h3>Seats</h3>
 
                             <div class="seat-box-content">
-                                <div class="d-flex gap-2 align-items-center">
-                                    <input type="checkbox" />
+                                <label class="d-flex gap-2 align-items-center">
+                                    <input type="checkbox" class="checkbox"  />
                                     <p>2</p>
-                                </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <input type="checkbox" />
+                                </label>
+                                <label class="d-flex gap-2 align-items-center">
+                                    <input type="checkbox" class="checkbox"  />
                                     <p>4</p>
-                                </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <input type="checkbox" />
+                                </label>
+                                <label class="d-flex gap-2 align-items-center">
+                                    <input type="checkbox" class="checkbox"  />
                                     <p>5</p>
-                                </div>
-                                <div class="d-flex gap-2 align-items-center">
-                                    <input type="checkbox" />
+                                </label>
+                                <label class="d-flex gap-2 align-items-center">
+                                    <input type="checkbox" class="checkbox"  />
                                     <p>7</p>
-                                </div>
+                                </label>
 
                             </div>
 
@@ -262,6 +273,167 @@
                         </div>
                     </div>
                 </div>
+                <!--------------------off canvas start-------------->
+                <div class="offcanvas offcanvas-start" id="demo2">
+                    <div class="offcanvas-header">
+                      <a href="#"class="offcanvas-title"><img src="./assets/logo.png" class="img-fluid" alt="logo"/></a>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="filteration">
+                            <div class="filter-head">
+                                <h4>Filter</h4>
+                                <span>Clear</span>
+                            </div>
+                            <!-----------filter location-->
+                            <div class="filter-location w-100">
+                                <h3>Location</h3>
+                                <div class="location-check w-100">
+                                    <div class="check-box-content">
+                                        <input type="checkbox" />
+                                        <p>Airport<span>(in terminal)</span></p>
+                                    </div>
+                                    <p class="count">0</p>
+                                </div>
+                                <div class="location-check w-100">
+                                    <div class="check-box-content">
+                                        <input type="checkbox" />
+                                        <p>Airport<span>(in terminal)</span></p>
+                                    </div>
+                                    <p class="count">0</p>
+                                </div>
+                                <div class="location-check w-100">
+                                    <div class="check-box-content">
+                                        <input type="checkbox" />
+                                        <p>All other locations</p>
+                                    </div>
+                                    <p class="count">4</p>
+                                </div>
+                            </div>
+                            <!------------price per day-->
+                            <div class="filter-price">
+                                <h3>Price Per Day</h3>
+                                <div class="price-check">
+                                    <div class="check-box-content">
+                                        <input type="checkbox" />
+                                        <p>US $0-$50</p>
+                                    </div>
+                                    <p class="count">4</p>
+                                </div>
+                                <div class="price-check">
+                                    <div class="check-box-content">
+                                        <input type="checkbox" />
+                                        <p>US $50-$100</p>
+                                    </div>
+                                    <p class="count">32</p>
+                                </div>
+                                <div class="price-check">
+                                    <div class="check-box-content">
+                                        <input type="checkbox" />
+                                        <p>US $50-$100</p>
+                                    </div>
+                                    <p class="count">19</p>
+                                </div>
+                                <div class="price-check">
+                                    <div class="check-box-content">
+                                        <input type="checkbox" />
+                                        <p>US $50-$100</p>
+                                    </div>
+                                    <p class="count">6</p>
+                                </div>
+                                <div class="price-check">
+                                    <div class="check-box-content">
+                                        <input type="checkbox" />
+                                        <p>US $50-$100</p>
+                                    </div>
+                                    <p class="count">10</p>
+                                </div>
+                            </div>
+                            <!-------------------Transmission---------->
+                            <div class="filter-price">
+                                <h3>Transmission</h3>
+                                <div class="price-check">
+                                    <div class="check-box-content">
+                                        <input type="checkbox" />
+                                        <p>Automatic</p>
+                                    </div>
+                                    <p class="count">4</p>
+                                </div>
+                                <div class="price-check">
+                                    <div class="check-box-content">
+                                        <input type="checkbox" />
+                                        <p>Manual</p>
+                                    </div>
+                                    <p class="count">8</p>
+                                </div>
+    
+                            </div>
+                            <!-----------------seats-------------->
+                            <div class="filter-seats">
+                                <h3>Seats</h3>
+    
+                                <div class="seat-box-content">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <input type="checkbox" />
+                                        <p>2</p>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <input type="checkbox" />
+                                        <p>4</p>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <input type="checkbox" />
+                                        <p>5</p>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <input type="checkbox" />
+                                        <p>7</p>
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+                            <!-------------------Company------------------>
+                            <div class="company-filter">
+                                <h3>Company</h3>
+                                <div class="company-logos">
+                                    <img src="./assets/okmobility.png" alt="company-logo"/>
+                                    <img src="./assets/avis.png" alt="company-logo"/>
+                                    <img src="./assets/boom.png" alt="company-logo"/>
+                                    <img src="./assets/record.png" alt="company-logo"/>
+                                    <img src="./assets/okmobility.png" alt="company-logo"/>
+                                    <img src="./assets/avis.png" alt="company-logo"/>
+                                    <img src="./assets/boom.png" alt="company-logo"/>
+                                    <img src="./assets/record.png" alt="company-logo"/>
+                                </div>
+                            </div>
+                            <!-------------Rating filter---------------->
+                            <div class="filter-seats">
+                                <h3>Rating</h3>
+    
+                                <div class="seat-box-content">
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <input type="checkbox" />
+                                        <p>2+</p>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <input type="checkbox" />
+                                        <p>4+</p>
+                                    </div>
+                                    <div class="d-flex gap-2 align-items-center">
+                                        <input type="checkbox" />
+                                        <p>5+</p>
+                                    </div>
+                                   
+    
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  
+                <!------------------off canvas end----------------->
                 <div class="filter-content">
                     <div class="filtered-cars overflow-hidden">
                         <div class="filter-cars-head">
@@ -332,11 +504,21 @@
                                                 <div class="rating-stars">
                                                     <p>Rating:</p>
                                                     <div class="rating-container">
-                                                        <span class="star" data-value="1">&#9733;</span>
-                                                        <span class="star" data-value="2">&#9733;</span>
-                                                        <span class="star" data-value="3">&#9733;</span>
-                                                        <span class="star" data-value="4">&#9733;</span>
-                                                        <span class="star" data-value="5">&#9733;</span>
+                                                        <svg class="star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"/>
+                                                          </svg>
+                                                          <svg class="star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"/>
+                                                          </svg>
+                                                          <svg class="star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"/>
+                                                          </svg>
+                                                          <svg class="star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"/>
+                                                          </svg>
+                                                          <svg class="star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"/>
+                                                          </svg>
                                                       </div>
                                                 </div>
                                             </div>
@@ -419,11 +601,21 @@
                                                 <div class="rating-stars">
                                                     <p>Rating:</p>
                                                     <div class="rating-container">
-                                                        <span class="star" data-value="1">&#9733;</span>
-                                                        <span class="star" data-value="2">&#9733;</span>
-                                                        <span class="star" data-value="3">&#9733;</span>
-                                                        <span class="star" data-value="4">&#9733;</span>
-                                                        <span class="star" data-value="5">&#9733;</span>
+                                                        <svg class="star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"/>
+                                                          </svg>
+                                                          <svg class="star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"/>
+                                                          </svg>
+                                                          <svg class="star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"/>
+                                                          </svg>
+                                                          <svg class="star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"/>
+                                                          </svg>
+                                                          <svg class="star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"/>
+                                                          </svg>
                                                       </div>
                                                 </div>
                                             </div>
@@ -506,11 +698,21 @@
                                                 <div class="rating-stars">
                                                     <p>Rating:</p>
                                                     <div class="rating-container">
-                                                        <span class="star" data-value="1">&#9733;</span>
-                                                        <span class="star" data-value="2">&#9733;</span>
-                                                        <span class="star" data-value="3">&#9733;</span>
-                                                        <span class="star" data-value="4">&#9733;</span>
-                                                        <span class="star" data-value="5">&#9733;</span>
+                                                        <svg class="star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"/>
+                                                          </svg>
+                                                          <svg class="star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"/>
+                                                          </svg>
+                                                          <svg class="star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"/>
+                                                          </svg>
+                                                          <svg class="star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"/>
+                                                          </svg>
+                                                          <svg class="star" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27Z"/>
+                                                          </svg>
                                                       </div>
                                                 </div>
                                             </div>
