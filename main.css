@@ -684,7 +684,7 @@ a {
 
     flex-wrap: nowrap;
     overflow-x: auto;
-    gap: 16px;
+    gap: 11px;
 }
 
 .car-img {
@@ -696,6 +696,7 @@ a {
 }
 
 .filter-car-card {
+    margin: 12px 5px;
     max-width: 142px;
     display: flex;
     padding: 16px 23px 18px 24px;
@@ -708,6 +709,12 @@ a {
     border-radius: 6px;
     background: var(--foundation-grey-light-hover, #F8F8F8);
 }
+.filter-car-card.selected {
+    background-color: #e6f7ff; /* Light blue background when selected */
+    border-color: #007bff; /* Light blue border */
+    outline: 2px solid #add8e6; /* Light blue outline */
+    outline-offset: 2px; /* Space between the card and outline */
+  }
 
 .filter-car-card h3 {
     color: var(--Foundation-Grey-Darker, #494949);

@@ -11,3 +11,17 @@ clearButton.addEventListener('click', () => {
     checkbox.checked = false;
   });
 });
+
+// Get all the cards
+const carCards = document.querySelectorAll('.filter-car-card');
+
+// Add click event listeners to each card
+carCards.forEach(card => {
+  card.addEventListener('click', () => {
+    // Remove 'selected' class from all cards
+    carCards.forEach(card => card.classList.remove('selected'));
+    // Add 'selected' class to the clicked card
+    card.classList.add('selected');
+  });
+});
+
