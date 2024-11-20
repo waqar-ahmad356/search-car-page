@@ -339,17 +339,44 @@ a {
         border-radius: 4px;
         border: 1px solid var(--Foundation-Grey-Normal, #D1D1D1);
         background: #F8F8F8;
-        padding: 12px;
+        padding:12px 6px;
+    }
+    .search-mobile input{
+        width: 100%;
+        border: none;
+        background-color: transparent;
+    }
+    .search-mobile input::placeholder{
+        font-size: 10px;
+    }
+    .search-mobile input:focus{
+        outline: none;
     }
 
     .date-icon {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 12px;
+        padding: 12px 6px;
         border-radius: 4px;
         border: 1px solid #D1D1D1;
         background: #F8F8F8;
+    }
+    .date-icon img{
+        display: none;
+    }
+    .date-icon input{
+        display: block;
+        border: none;
+        background-color: transparent;
+        width: 100%;
+    }
+    .date-icon input:focus{
+        outline: none;
+    }
+    .date-icon input[type='date']::-webkit-calendar-picker-indicator{
+       
+        display: none
     }
 
     .search-btn-mobile {
@@ -369,6 +396,15 @@ a {
         margin-top: 24px;
         width: 100%;
 
+    }
+    .date-icon img{
+        display: block;
+    }
+    .date-icon input{
+        display: none;
+        border: none;
+        background-color: transparent;
+        width: 100%;
     }
 
    
